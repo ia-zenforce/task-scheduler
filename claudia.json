@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "task-scheduler-executor",
+    "name": "task-scheduler",
+    "region": "us-east-1"
+  }
+}

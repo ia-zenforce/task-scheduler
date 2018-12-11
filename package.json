@@ -1,0 +1,18 @@
+{
+  "name": "task-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lambda.js",
+  "scripts": {
+    "start": "claudia create --region us-east-1 --handler lambda.handler",
+    "test": "claudia test-lambda",
+    "update": "claudia update --cache-api-config claudiaEventsCached",
+    "schedule":
+      "claudia add-scheduled-event --event test.json --name task-scheduler --cron '20 * * * ? *'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
